@@ -2,17 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Đổi tiền</title>
 </head>
 <body>
-<script>
-  let USD;
-  let VND;
-  USD=VND/23000;
-  VND=USD*23000;
-  <form>
-
-  </form>
-</script>
+<table>
+    <tr>
+        <th><label for="Amount">Amount</label></th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="Amount"></td>
+        <td>
+            <select id="From">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="To">
+                <option value="VND">VND</option>
+                <option  value="USD">USD</option>
+            </select>
+        </td>
+        <td><button onclick="CM()">Convert</button></td>
+    </tr>
+</table>
+<br>
+<p id="Result"></p>
 </body>
 </html>
+<script src="bt2.js"></script>
