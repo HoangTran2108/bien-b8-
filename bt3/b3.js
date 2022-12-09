@@ -21,4 +21,4 @@ function t() {
     let h = document.getElementById("s2").value;
     let b = (+p) / (+h)
     document.getElementById("kq").innerHTML = b
-}n
+}
